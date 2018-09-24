@@ -13,7 +13,7 @@ When run with an argument, compile assumes it is the name of a language, and run
 
 ## How does compilation work?
 
-Compilation of any form usually is along the usual lines of:
+Compilation of any form usually is along the lines of:
 1. Select the files
 2. Validate code
 3. Combine files into an executable form
