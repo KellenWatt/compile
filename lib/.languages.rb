@@ -8,13 +8,17 @@ $languages = {
   java: /\.java$/,
   go: /\.go$/,
   python: /\.py$/,
+  cython: /\.pyx$/,
   "C#": /\.cs$/,
   assembly: /\.(s|S|asm)$/,
   d: /\.d$/,
   ruby: /\.rb$/,
   lisp: /\.lisp$/,
   python3: /\.py3$/,
-  crystal: /\.cr$/
+  crystal: /\.cr$/,
+  haskell: /\.(l)?hs$/,
+  rust: /\.rs$/,
+  latex: /\.tex$/
 }
 
 $exclusions = [
