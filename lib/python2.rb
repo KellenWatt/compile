@@ -1,5 +1,5 @@
 $files.keep_if do |f|
-  f =~ $languages[:python]
+  f =~ $languages[:python2]
 end
 
 if !system("python -m py_compile *.py")

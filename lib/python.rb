@@ -1,11 +1,13 @@
+require "fileutils"
+
 $files.keep_if do |f|
-  f =~ $languages[:python3]
+  f =~ $languages[:python]
 end
 
-if !system("python3 -m py_compile *.py*")
+if !system("python3 -m py_compile *.py")
   exit 1
 else
-  File.delete "__pycache__"
+  FileUtils.remove_dir "__pycache__"
 end
 
 File.open(File.basename(Dir.pwd), "w+", 0755) do |out|
