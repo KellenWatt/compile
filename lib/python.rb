@@ -1,16 +1,14 @@
 $files.keep_if do |f|
-  f =~ $languages[:python]
+  f =~ $languages[:python3]
 end
 
-if !system("python -m py_compile *.py")
+if !system("python3 -m py_compile *.py*")
   exit 1
 else
-  Dir.glob("*.pyc").each do |f|
-    File.delete(f)
-  end
+  File.delete "__pycache__"
 end
 
 File.open(File.basename(Dir.pwd), "w+", 0755) do |out|
-  out.puts "#!/usr/bin/env python"
+  out.puts "#!/usr/bin/env python3"
   combine out, $files
 end
