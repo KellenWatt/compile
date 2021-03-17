@@ -2,6 +2,11 @@
 
 A Ruby script to make compilation and pseudo-compilation semi-automatic.
 
+# Sunset Warning
+This software is completely unmaintained now (as of 2021). For an updated, cleaner, and safer 
+version, take a look at another project of mine, [Genius](https://github.com/KellenWatt/genius).
+Genius does the exact same thing, but much better, and far more extensibly.
+
 ## What it does
 
 When run without any arguments (i.e. `compile`), compile first checks if there are any build tool files in the directory (currently 
