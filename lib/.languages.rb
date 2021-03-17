@@ -4,12 +4,12 @@
 # Keep an eye out for broken compilation, and fix the issues if/when it becomes a problem
 
 $languages = {
-  "c++": /\.(c|h)(pp)?$/,
+  "c++" => /\.(c|h)(pp)?$/,
   java: /\.java$/,
   go: /\.go$/,
   python: /\.py(3)?$/,
   cython: /\.pyx$/,
-  "C#": /\.cs$/,
+  "C#" => /\.cs$/,
   assembly: /\.(s|S|asm)$/,
   d: /\.d$/,
   ruby: /\.rb$/,

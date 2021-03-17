@@ -1,5 +1,5 @@
 $files.keep_if do |f|
-  f =~ $langauges[:haskell]
+  f =~ $languages[:haskell]
 end
 
-system("ghc -o #{File.basename(Dir.pwd)} #{files.join(" ")}")
+system("ghc -o #{File.basename(Dir.pwd)} #{$files.join(" ")}")
